@@ -1,1 +1,5 @@
 python3 manage.py runserver
+
+docker build -t django_app:1.0.0 .
+
+docker run --name django_app -p 8000:8000 django_app:1.0.0
